@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>جامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية || المدونة</title>
+    <meta name="description" content="جامعة الوسطية - جامعة وسطية شرعية للعلوم الإسلامية والإنسانية">
+    <meta name="keywords" content="جامعة الوسطية, جامعة, الوسطية, علوم الشريعة, جامعة إسلامية, الحبيب أبوبكر العدني">
+    <meta name="author" content="Bin_Yahya">
+
+    <!-- Favicon / App icons -->
+    <link rel="icon" type="image/ico" href="assets/app-icons/icon-32x32.ico">
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/glightbox/css/glightbox.min.css">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="assets/icons/icons.min.css">
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min-rtl.css">
+
+    <!-- Customizer generated styles -->
+    <style id="customizer-styles"></style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <img class="img-fluid animation-blink" style="width: 300px;" src="assets/app-icons/logo.png">
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <!-- ======= Header ======= -->
+      <section id="topbar" class="topbar d-flex align-items-center bg-primary">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+          <div class="contact-info d-flex align-items-center">
+            <i class="ai-mail d-flex align-items-center">
+              <a class="text-decoration-none link-light link-opacity-75-hover" href="mailto:contact@example.com">contact@example.com</a>
+            </i>
+            <i class="ai-phone d-flex align-items-center ms-4">
+              <a class="text-decoration-none link-light link-opacity-75-hover" href="tel: +967 777 777 777" style="direction: ltr;">+967 777 777 777</a>
+            </i>
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <a href="https://twitter.com/"><i class="ai-x"></i></a>
+            <a href="https://www.facebook.com/"><i class="ai-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="ai-instagram"></i></a>
+            <a href="https://www.snapchat.com/"><i class="ai-snapchat"></i></i></a>
+            <a href="https://www.tiktok.com/"><i class="ai-tiktok"></i></i></a>
+            <a href="#" class="btn btn-light text-black text-opacity-75 px-3">حمل تطبيقنا</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Top Bar -->
+       
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <!--header id="header" class="header navbar navbar-expand-lg bg-light"-->
+      <header id="header" class="header navbar navbar-expand-lg navbar-dark bg-info" style="background-color: rgb(23, 63, 133) !important;">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand pe-sm-3" style="padding-bottom: 0px;padding-top: 0px;" href="#">
+            <span class="text-primary flex-shrink-0 me-2">
+              <img class="logo" src="assets/app-icons/logo.png">
+            </span>
+          </a>
+
+          <!-- Theme switcher -->
+          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+            <input class="form-check-input" type="checkbox" id="theme-mode">
+            <label class="form-check-label" for="theme-mode">
+              <i class="ai-sun fs-lg"></i>
+            </label>
+            <label class="form-check-label" for="theme-mode">
+              <i class="ai-moon fs-lg"></i>
+            </label>
+          </div>
+
+          <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#" target="_blank" rel="noopener">
+            <i class="ai-clipboard fs-xl me-2 ms-n1"></i>
+            التقدم الآن
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">الكليات والمراكز</a>
+                <div class="dropdown-menu overflow-hidden p-0">
+                  <div class="d-lg-flex">
+                    <div class="mega-dropdown-column pt-1 pt-lg-3 pb-lg-4">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-0 mb-md-2">
+                          <a class="dropdown-item" href="#">كلية أصول الدين</a>
+                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 rounded-3 rounded-start-0" style="background-image: url(assets/img/megamenu/landings.jpg);"></span>
+                        </li>
+                        <li class="mb-0 mb-md-2">
+                          <a class="dropdown-item" href="#">كلية العلوم الشرعية والقانونية</a>
+                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/mobile-app.jpg);"></span>
+                        </li>
+                        <li class="mb-0 mb-md-2">
+                          <a class="dropdown-item" href="#">كلية البنات</a>
+                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/product-landing.jpg);"></span>
+                        </li>
+                        <li class="mb-0 mb-md-2">
+                          <a class="dropdown-item" href="#">كلية التعليم عن بعد</a>
+                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-1.jpg);"></span>
+                        </li>
+                        <li class="mb-0 mb-md-2">
+                          <a class="dropdown-item" href="#">مركز المرصد النبوي</a>
+                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-2.jpg);"></span>
+                        </li>
+                        <li class="mb-0 mb-md-2">
+                          <a class="dropdown-item" href="#">مركز الإبداع الثقافي</a>
+                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-3.jpg);"></span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mega-dropdown-column position-relative border-start z-3"></div>
+                  </div>
+                </div>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">عن الجامعة</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">رئاسة الجامعة</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">مجلس الأمناء</a></li>
+                      <li><a class="dropdown-item" href="#">مؤسس الجامعة</a></li>
+                      <li><a class="dropdown-item" href="#">رئيس الجامعة</a></li>
+                      <li><a class="dropdown-item" href="#">نائب رئيس الجامعة</a></li>
+                      <li><a class="dropdown-item" href="#">حقائق وأرقام</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">الرؤية والأهداف</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">رؤية الجامعة</a></li>
+                      <li><a class="dropdown-item" href="#">الرسالة والأهداف</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">نشأة الجامعة</a></li>
+                  <li><a class="dropdown-item" href="#">الهيكل التنظيمي</a></li>
+                  <li><a class="dropdown-item" href="#">المبنى الجامعي</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">رئاسة الجامعة</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">مجلس الأمناء</a></li>
+                  <li><a class="dropdown-item" href="#">مؤسس الجامعة</a></li>
+                  <li><a class="dropdown-item" href="#">رئيس الجامعة</a></li>
+                  <li><a class="dropdown-item" href="#">نائب رئيس الجامعة</a></li>
+                  <li><a class="dropdown-item" href="#">حقائق وأرقام</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">القبول والتسجيل</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">متطلبات القبول بالجامعة</a></li>
+                  <li><a class="dropdown-item" href="#">دليل الطالب</a></li>
+                  <li><a class="dropdown-item" href="#">الرسوم الدراسية</a></li>
+                  <li><a class="dropdown-item" href="#">التقويم الجامعي</a></li>
+                  <li><a class="dropdown-item" href="#">نظام التعليم عن بعد</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">الكليات والمراكز</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">كلية أصول الدين</a></li>
+                  <li><a class="dropdown-item" href="#">كلية العلوم الشرعية والقانونية</a></li>
+                  <li><a class="dropdown-item" href="#">كلية البنات</a></li>
+                  <li><a class="dropdown-item" href="#">كلية التعليم عن بعد</a></li>
+                  <li><a class="dropdown-item" href="#">مركز المرصد النبوي</a></li>
+                  <li><a class="dropdown-item" href="#">مركز الإبداع الثقافي</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">البحث العلمي</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">المؤتمرات العلمية</a></li>
+                  <li><a class="dropdown-item" href="#">الندوات العلمية</a></li>
+                  <li><a class="dropdown-item" href="#">مجلة أبحاث الوسطية الشرعية</a></li>
+                  <li><a class="dropdown-item" href="#">شروط وقواعد النشر</a></li>
+                  <li><a class="dropdown-item" href="#">هيئات ولجان المجلة</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-sm-none p-3 mt-n3">
+              <a class="btn btn-primary w-100 mb-1" href="#" target="_blank" rel="noopener">
+                <i class="ai-clipboard fs-xl me-2 ms-n1"></i>
+                التقدم الآن
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero slider -->
+      <section class="position-relative min-vh-100 py-5 mb-5" data-bs-theme="dark">
+
+        <!-- Background image slider -->
+        <div class="swiper swiper-scale-effect position-absolute top-0 start-0 w-100 h-100" data-swiper-options='{
+          "effect": "fade",
+          "speed": 800,
+          "autoplay": {
+            "delay": 7000,
+            "disableOnInteraction": false
+          },
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          }
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide-cover bg-position-top-center" style="background-image: url(assets/img/swiper-slide/01.jpg);"></div>
+              <div class="container position-relative z-3 pt-5 py-lg-3 py-xl-5 my-5">
+                <div class="row pt-md-3 py-xxl-5 my-5">
+                  <div class="col py-5 mb-md-4 mb-lg-5 header-swiper">
+                    <h1 class="display-3 text-uppercase mb-4">حفل تخرج الدفعتين الأولى والثانية لطلاب جامعة الوسطية الشرعية</h1>
+                    <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">حفل تخرج الدفعتين الأولى والثانية من طلاب جامعة الوسطية الشرعية مساء الثلاثاء 24 صفر 1444هـ ...</p>
+                    <div class="position-relative d-inline-flex align-items-center">
+                      <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="blog.html" aria-label="Stretched Link">
+                        <i class="ai-arrow-right"></i>
+                      </a>
+                      <span class="text-body fs-lg fw-semibold ms-3">مشاهدة الخبر</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-cover bg-position-top-center" style="background-image: url(assets/img/swiper-slide/02.jpg);"></div>
+              <div class="container position-relative z-3 pt-5 py-lg-3 py-xl-5 my-5">
+                <div class="row pt-md-3 py-xxl-5 my-5">
+                  <div class="col py-5 mb-md-4 mb-lg-5 header-swiper">
+                    <h1 class="display-3 text-uppercase mb-4">إقامة ورشة العمل التدريبية لتوصيف <br>مقررات برامج البكالوريوس</h1>
+                    <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">نظمت كلية التعليم عن بُعد بجامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية بشِعب الإمام المهاجر ...</p>
+                    <div class="position-relative d-inline-flex align-items-center">
+                      <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="blog.html" aria-label="Stretched Link">
+                        <i class="ai-arrow-right"></i>
+                      </a>
+                      <span class="text-body fs-lg fw-semibold ms-3">مشاهدة الخبر</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-cover bg-position-top-center" style="background-image: url(assets/img/swiper-slide/03.jpg);"></div>
+              <div class="container position-relative z-3 pt-5 py-lg-3 py-xl-5 my-5">
+                <div class="row pt-md-3 py-xxl-5 my-5">
+                  <div class="col py-5 mb-md-4 mb-lg-5 header-swiper">
+                    <h1 class="display-3 text-uppercase mb-4">الندوة العلمية في ذكرى وفاة الحبيب أبوبكر المشهور</h1>
+                    <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">أقيمت مساء السبت 11 محرم 1445هـ بقاعة الإمام عبدالقادر السقاف افتتاحية الحلقة العلمية الأولى ...</p>
+                    <div class="position-relative d-inline-flex align-items-center">
+                      <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="blog.html" aria-label="Stretched Link">
+                        <i class="ai-arrow-right"></i>
+                      </a>
+                      <span class="text-body fs-lg fw-semibold ms-3">مشاهدة الخبر</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-vertical mb-4" style="align-items:end; right: -1rem;"></div>
+        </div>
+
+      </section>
+
+      <!-- Page container-->
+      <section class="container pt-5 mt-5">
+
+        <!-- Breadcrumb-->
+        <nav aria-label="breadcrumb">
+          <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+            <li class="breadcrumb-item"><a href="#">المدونة</a></li>
+            <li class="breadcrumb-item active" aria-current="page">الندوة العلمية في ذكرى</li>
+          </ol>
+        </nav>
+        
+        <div class="row">
+          <div class="col-lg-9 col-xl-8 pe-lg-4 pe-xl-0">
+
+            <!-- Post title + post meta -->
+            <div class="rounded-5 mb-3 overflow-hidden">
+              <div class="jarallax ratio ratio-16x9 d-flex align-items-center justify-content-center" data-jarallax data-type="scale" data-speed="0.5">
+                <img class=" jarallax-img" src="assets/img/blog-resources/00.jpg" alt="Image">
+              </div>
+              
+            </div>
+            <h1 class="pb-2 pb-lg-3">الندوة العلمية في ذكرى الحبيب أبوبكر المشهور</h1>
+            <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom mb-4">
+              <div class="d-flex align-items-center mb-4 me-4">
+                <span class="fs-sm me-2">بواسطة:</span>
+                <a class="nav-link position-relative fw-semibold p-0" href="#author" data-scroll data-scroll-offset="80">
+                  حسين بن يحيى
+                  <span class="d-block position-absolute start-0 bottom-0 w-100" style="background-color: currentColor; height: 1px;"></span>
+                </a>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <span class="fs-sm me-2">شارك الخبر:</span>
+                <div class="d-flex">
+                  <a class="nav-link p-2 me-2" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" aria-label="Instagram">
+                    <i class="ai-instagram"></i>
+                  </a>
+                  <a class="nav-link p-2 me-2" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+                    <i class="ai-facebook"></i>
+                  </a>
+                  <a class="nav-link p-2 me-2" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+                    <i class="ai-telegram fs-sm"></i>
+                  </a>
+                  <a class="nav-link p-2" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="X" aria-label="X">
+                    <i class="ai-x"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Post content -->
+            <p class="fs-lg pt-2 pt-sm-3">أقيمت مساء السبت 11 محرم 1445هـ بقاعة الإمام عبدالقادر السقاف افتتاحية الحلقة العلمية الأولى في ذكرى وفاة المفكر الإسلامي الحبيب أبي بكر العدني بن علي المشهور وحولية الإمام المهاجر إلى الله أحمد بن عيسى رحمهما الله تعالى بعنوان     النشأة والبيئة التي كونت شخصية العلامة المربي الحبيب أبي بكر العدني بن علي المشهور داعيا ومفكرا إسلاميا، يقيمها مركز الإبداع الثقافي للدراسات وخدمة التراث، ومركز المرصد النبوي بجامعة الوسطية الشرعية بالتعاون مع رباط الإمام المهاجر، وبرعاية مجلس مكتب الموجه العام لأربطة التربية الإسلامية الحبيب العلامة أبي بكر العدني بن علي المشهور.</p>
+            <p class="fs-lg mb-3">وفي الجلسة الافتتاحية ألقى عميد دار المصطفى للدراسات الإسلامية العلامة الحبيب عمر بن محمد بن سالم بن حفيظ كلمة أوضح فيها مسيرة الحبيب العلامة أبي بكر العدني بن علي المشهور ونشأته المباركة، والحياة الطيبة التي عاشها على ركائز التربية والقيم والمبادئ في أسرته على وجه الخصوص وفي مدرسة حضرموت عموما ، مشيرا إلى الحياة المستمرة للحبيب العلامة أبي بكر العدني من خلال علوم الإرث والتزكية والتربية التي بقيت آثارها قائمة في حياتنا يرتقي بها درجات عند الله سبحانه وتعالى.</p>
+            <h2 class="h4 mb-lg-4 pt-3 pt-md-4 pt-xl-5">صور ملتقطة من الندوة العلمية في ذكرى وفاة الحبيب أبوبكر المشهور</h2>
+            <figure class="figure">
+              <img class="figure-img rounded-5 mb-3" src="assets/img/blog/00.jpg" alt="Image">
+              <figcaption class="figure-caption">صورة ملتقطة من الندوة العلمية في ذكرى وفاة الحبيب أبوبكر المشهور</figcaption>
+            </figure>
+            <div class="card border-0 bg-secondary mb-3">
+              <div class="card-body">
+                <figure>
+                  <blockquote class="blockquote">
+                    <p>وأكد الحبيب عمر بن حفيظ على أهمية دور الأسرة الصالحة في تنشئة الأجيال حيث كان الحبيب العلامة أبوبكر العدني مثالا للتربية والتنشئة الصالحة للأبناء،  بالإضافة إلى ارتباطه بالعلماء وتتلمذه على يد الحبيب عبدالقادر بن أحمد السقاف الذي أخذ عنه علوم الدين ولاح له من خلال مجالساته علم فقه التحولات الذي أرسى قواعده وضوابطه الحبيب أبوبكر العدني المشهور.</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">الحبيب / عمر بن محمد بن سالم بن حفيظ</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="d-flex flex-wrap pb-5 pt-3 pt-md-4 pt-xl-5 mt-xl-n2">
+              <h3 class="h6 py-1 mb-0 me-4">هاشتاقات:</h3>
+              <a class="nav-link fs-sm py-1 px-0 me-3" href="#">
+                <span class="text-primary">#</span>مناسبات
+              </a>
+              <a class="nav-link fs-sm py-1 px-0 me-3" href="#">
+                <span class="text-primary">#</span>استضافات
+              </a>
+              <a class="nav-link fs-sm py-1 px-0 me-3" href="#">
+                <span class="text-primary">#</span>أخبار
+              </a>
+            </div>
+
+            <!-- Author widget -->
+            <div class="border-top border-bottom py-4" id="author">
+              <div class="d-flex align-items-start py-2">
+                <img class="d-block rounded-circle mb-3" src="assets/img/blog/avatar.jpg" width="56" alt="Author image">
+                <div class="d-md-flex w-100 ps-4">
+                  <div style="max-width: 26rem;">
+                    <h3 class="h5 mb-2">حسين بن يحيى</h3>
+                    <p class="fs-sm mb-0">هو طالب يدرس علوم الديانة الإسلامية تحت راية الوسطية الشرعية والاعتدال الواعي والفكر المستنير.</p>
+                  </div>
+                  <div class="pt-4 pt-md-0 ps-md-4 ms-md-auto">
+                    <h3 class="h5">شارك الخبر:</h3>
+                    <div class="d-flex">
+                      <a class="nav-link p-2 me-2" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram" aria-label="Instagram">
+                        <i class="ai-instagram"></i>
+                      </a>
+                      <a class="nav-link p-2 me-2" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook" aria-label="Facebook">
+                        <i class="ai-facebook"></i>
+                      </a>
+                      <a class="nav-link p-2 me-2" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Telegram" aria-label="Telegram">
+                        <i class="ai-telegram fs-sm"></i>
+                      </a>
+                      <a class="nav-link p-2" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="X" aria-label="X">
+                        <i class="ai-x"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Comments -->
+            <div class="pt-4 pt-xl-5 mt-4" id="comments">
+              <h2 class="h1 py-lg-1 py-xl-3">14 تعليق</h2>
+
+              <!-- Comment -->
+              <div class="border-bottom py-4 mt-2 mb-4">
+                <div class="d-flex align-items-center pb-1 mb-3">
+                  <img class="rounded-circle" src="assets/img/avatar/33.jpg" width="48" alt="Comment author">
+                  <div class="ps-3">
+                    <h6 class="mb-0">هاشم عبدالله</h6>
+                    <span class="fs-sm text-body-secondary">05 Jan,2024</span>
+                  </div>
+                </div>
+                <p class="pb-2 mb-0">جهود مباركة ونتمنى لكم مزيدا من التفوق والنجاح.</p>
+                <button class="nav-link fs-sm fw-semibold px-0 py-2" type="button">
+                  رد
+                  <i class="ai-redo fs-xl ms-2"></i>
+                </button>
+              </div>
+
+              <!-- Comment -->
+              <div class="border-bottom pt-2 pb-4">
+                <div class="d-flex align-items-center pb-1 mb-3">
+                  <img class="rounded-circle" src="assets/img/avatar/35.jpg" width="48" alt="Comment author">
+                  <div class="ps-3">
+                    <h6 class="mb-0">عمر سالم أحمد</h6>
+                    <span class="fs-sm text-body-secondary">06 Jan,2024</span>
+                  </div>
+                </div>
+                <p class="pb-2 mb-0">خطوة ممتازة موفقين إن شاء الله</p>
+                <button class="nav-link fs-sm fw-semibold px-0 py-2" type="button">
+                  رد
+                  <i class="ai-redo fs-xl ms-2"></i>
+                </button>
+
+                <!-- Comment reply -->
+                <div class="card card-body border-0 bg-secondary mt-4">
+                  <div class="d-flex align-items-center pb-1 mb-3">
+                    <img class="rounded-circle" src="assets/img/blog/avatar.jpg" width="48" alt="Comment author">
+                    <div class="ps-3">
+                      <h6 class="mb-0">حسين بن يحيى</h6>
+                      <span class="fs-sm text-body-secondary">06 Jan,2024</span>
+                    </div>
+                  </div>
+                  <p class="mb-0"><a class="fw-bold text-decoration-none" href="#">@عمر سالم أحمد</a> شكرا لك أخي على مرورك الطيب.</p>
+                </div>
+              </div>
+
+              <!-- Comment -->
+              <div class="border-bottom py-4 mt-2 mb-4">
+                <div class="d-flex align-items-center pb-1 mb-3">
+                  <img class="rounded-circle" src="assets/img/avatar/16.jpg" width="48" alt="Comment author">
+                  <div class="ps-3">
+                    <h6 class="mb-0">مصطفى محمد عبدالرحمن</h6>
+                    <span class="fs-sm text-body-secondary">07 Jan,2024</span>
+                  </div>
+                </div>
+                <p class="pb-2 mb-0">تنمنى لكم مزيداً من التفوق والنجاح.</p>
+                <button class="nav-link fs-sm fw-semibold px-0 py-2" type="button">
+                  رد
+                  <i class="ai-redo fs-xl ms-2"></i>
+                </button>
+              </div>
+
+              <!-- All comments button -->
+              <div class="text-end pb-5 mb-lg-1 mb-xl-3">
+                <a class="btn btn-link px-0" href="#">
+                  مشاهدة كل التعليقات
+                  <i class="ai-chevron-right fs-lg ms-1"></i>
+                </a>
+              </div>
+
+
+              <!-- Comment form -->
+              <div class="card border-0 bg-secondary pt-2 p-md-2 p-xl-3 p-xxl-4 mt-n3 mt-md-0">
+                <div class="card-body">
+                  <h2 class="pb-2 pb-lg-3 pb-xl-4">أترك تعليقا</h2>
+                  <form class="row needs-validation g-4" novalidate>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="c-name">الإسم</label>
+                      <input class="form-control" type="text" placeholder="أكتب اسمك *" required id="c-name">
+                      <div class="invalid-feedback">رجاءا قم بإدخال إسمك!</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="c-email">البريد الإكتروني</label>
+                      <input class="form-control" type="email" placeholder="بريدك الإكتروني *" required id="c-email">
+                      <div class="invalid-feedback">رجاءا قم بإدخال بريدك الإكتروني!</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="c-comment">التعليق</label>
+                      <textarea class="form-control" rows="4" placeholder="أكتب تعليقك هنا..." required id="c-comment"></textarea>
+                      <div class="invalid-feedback">رجاءا قم بكتابة تعليقك!</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="c-save">
+                        <label class="form-check-label" for="c-save">إحفظ اسمي وبريدي الإكتروني</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">إرسال تعليقك</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Sidebar (offcanvas on sreens < 992px) -->
+          <aside class="col-lg-3 offset-xl-1">
+            <div class="offcanvas-lg offcanvas-end" id="sidebar">
+              <div class="offcanvas-header">
+                <h4 class="offcanvas-title">البحث وآخر الأخبار</h4>
+                <button class="btn-close ms-auto" type="button" data-bs-dismiss="offcanvas" data-bs-target="#sidebar" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+
+                <!-- Search box -->
+                <div class="position-relative mb-4 mb-lg-5">
+                  <i class="ai-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                  <input class="form-control ps-5" type="search" placeholder="إبحث عما تريد هنا">
+                </div>
+
+                <!-- Popular posts -->
+                <h4 class="pt-1 pt-lg-0 mt-lg-n2">إخترنا لأجلك</h4>
+                <div class="mb-lg-5 mb-4">
+                  <article class="position-relative pb-2 mb-3 mb-lg-4">
+                    <img class="rounded-5" src="assets/img/blog-resources/01.jpg" alt="Post image">
+                    <h5 class="h6 mt-3 mb-0">
+                      <a class="stretched-link" href="#">حفل تخرج الدفعتين الأولى والثانية لطلاب جامعة الوسطية</a>
+                    </h5>
+                  </article>
+                  <article class="position-relative">
+                    <img class="rounded-5" src="assets/img/blog-resources/02.jpg" alt="Post image">
+                    <h5 class="h6 mt-3 mb-0">
+                      <a class="stretched-link" href="#">إقامة ورشة العمل التدريبية لتوصيف مقررات برامج البكالوريوس</a>
+                    </h5>
+                  </article>
+                </div>
+
+                <!-- Recent posts -->
+                <h4 class="pt-3 pt-lg-1 mb-4">آخر الأخبار</h4>
+                <ul class="list-unstyled mb-lg-5 mb-4">
+                  <li class="border-bottom pb-3 mb-3">
+                    <span class="h6 mb-0">
+                      <a href="#">حفل تخرج الدفعتين الأولى والثانية للطلاب بجامعة الوسطية</a>
+                    </span>
+                  </li>
+                  <li class="border-bottom pb-3 mb-3">
+                    <span class="h6 mb-0">
+                      <a href="#">ورشة العمل التدريبية لتوصيف مقررات برامج البكالوريوس</a>
+                    </span>
+                  </li>
+                  <li class="border-bottom pb-3 mb-3">
+                    <span class="h6 mb-0">
+                      <a href="#">الندوة العلمية في ذكرى وفاة الحبيب أبوبكر المشهور</a>
+                    </span>
+                  </li>
+                  <li class="border-bottom pb-3">
+                    <span class="h6 mb-0">
+                      <a href="#">الندوة العلمية عن القضاء باليمن بين الماضي والحاضر</a>
+                    </span>
+                  </li>
+                </ul>
+
+                <!-- Relevant topics -->
+                <h4 class="pt-3 pt-lg-1 mb-4">المواضيع ذات الصلة</h4>
+                <div class="d-flex flex-wrap mt-n3 ms-n3 mb-lg-5 mb-4 pb-3 pb-lg-0">
+                  <a class="btn btn-outline-secondary rounded-pill mt-3 ms-3" href="#">مناسبات</a>
+                  <a class="btn btn-outline-secondary rounded-pill mt-3 ms-3" href="#">المستجدات</a>
+                  <a class="btn btn-outline-secondary rounded-pill mt-3 ms-3" href="#">استضافات</a>
+                  <a class="btn btn-outline-secondary rounded-pill mt-3 ms-3" href="#">أخرى</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+
+      <!-- Related articles (carousel) -->
+      <section class="container py-5 mt-sm-2 my-md-4 my-xl-5">
+        <div class="d-flex align-items-center pb-3 mb-3 mb-lg-4 mt-2 mt-xxl-3">
+          <h2 class="h1 mb-0 me-4">المواضيع والأخبار الهامة</h2>
+          <div class="d-flex ms-auto">
+            <button class="btn btn-prev btn-icon btn-sm btn-outline-primary rounded-circle me-3" type="button" id="prev-post" aria-label="Prev">
+              <i class="ai-arrow-right"></i>
+            </button>
+            <button class="btn btn-next btn-icon btn-sm btn-outline-primary rounded-circle" type="button" id="next-post" aria-label="Next">
+              <i class="ai-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <div class="swiper pb-2 pb-sm-3 pb-md-4" data-swiper-options='
+          {
+            "spaceBetween": 24,
+            "loop": true,
+            "autoHeight": true,
+            "navigation": {
+              "prevEl": "#prev-post",
+              "nextEl": "#next-post"
+            },
+            "breakpoints": {
+              "576": { "slidesPerView": 2 },
+              "1000": { "slidesPerView": 3 }
+            }
+          }
+        '>
+          <div class="swiper-wrapper">
+
+            <!-- Post -->
+            <article class="swiper-slide">
+              <div class="position-relative">
+                <img class="rounded-5" src="assets/img/blog-resources/01.jpg" alt="Post image">
+                <h3 class="h4 mt-4 mb-0">
+                  <a class="stretched-link" href="#">حفل تخرج الدفعتين الأولى والثانية لطلاب جامعة الوسطية الشرعية</a>
+                </h3>
+              </div>
+            </article>
+
+            <!-- Post -->
+            <article class="swiper-slide">
+              <div class="position-relative">
+                <img class="rounded-5" src="assets/img/blog-resources/02.jpg" alt="Post image">
+                <h3 class="h4 mt-4 mb-0">
+                  <a class="stretched-link" href="#">إقامة ورشة العمل التدريبية لتوصيف مقررات برامج البكالوريوس</a>
+                </h3>
+              </div>
+            </article>
+
+            <!-- Post -->
+            <article class="swiper-slide">
+              <div class="position-relative">
+                <img class="rounded-5" src="assets/img/blog-resources/03.jpg" alt="Post image">
+                <h3 class="h4 mt-4 mb-0">
+                  <a class="stretched-link" href="#">الندوة العلمية في ذكرى وفاة الحبيب أبوبكر المشهور</a>
+                </h3>
+              </div>
+            </article>
+
+            <!-- Post -->
+            <article class="swiper-slide">
+              <div class="position-relative">
+                <img class="rounded-5" src="assets/img/blog-resources/04.jpg" alt="Post image">
+                <h3 class="h4 mt-4 mb-0">
+                  <a class="stretched-link" href="#">جامعة الوسطية تشارك بمؤتمر مئوية الحبيب أحمد سميط</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Sidebar toggle button -->
+      <button class="d-lg-none btn btn-sm fs-sm btn-primary w-100 rounded-0 fixed-bottom" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        <i class="ai-layout-column me-2"></i>
+        المزيد من الأخبار
+      </button>
+
+    </main>
+    
+    <!-- ======= Footer ======= -->
+    <!-- Footer -->
+    <footer class="footer bg-secondary py-2 position-relative overflow-hidden">
+      <div class="container">
+        <div class="position-absolute top-0 end-0 pe-5 z-2">
+          <svg class="me-5" width="514" height="254" viewBox="0 0 514 254" fill="#814d1d" fill-opacity=".04" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="257" cy="0.5" rx="257" ry="253.5"></ellipse>
+          </svg>
+        </div>
+        
+        <svg class="d-block position-absolute top-0 start-0 text-white text-dark-mode-dark" style="transform: scaleX(-1);" width="125" height="99" viewBox="0 0 125 99" fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-17.819-8.269c-.305.249-.567.498-.814.791-1.018 1.172-1.585 2.695-2.08 4.204-4.145 12.479-9.482 29.206-10.223 42.652-.553 10.063 2.516 19.232 8.885 27.317 9.729 12.347 18.367 9.096 32.037 9.887 16.084.937 25.391 8.173 39.497 16.156 13.103 7.426 27.427 6.943 39.163-1.128 13.859-9.521 26.045-30.056 30.495-46.387 4.494-16.493 8.071-34.611.247-51.865-12.273-27.053-55.726-15.233-74.457-11.996-8.827 1.523-17.131 5.829-26.176 6.708-5.73.556-11.547-.527-17.349-.059-5.25.425-14.935.234-19.225 3.72z"></path>
+          <path d="M-3.201 8.561c-.582.923-1.003 1.992-1.28 3.105-2.414 9.594-4.974 20.77-4.552 29.792.175 3.589.945 7.016 2.458 10.282 1.323 2.871 3.127 5.595 5.395 8.188 7.329 8.378 13.801 6.459 23.631 7.162 11.721.849 18.862 5.727 29.143 10.795 9.467 4.658 19.705 3.882 28.285-2.402 10.049-7.323 18.571-22.058 21.581-33.937 3.054-12.054 5.104-25.134-.742-37.438-9.074-19.188-39.54-11.981-53.836-9.828-7.199 1.084-14.979 4.409-22.468 5.463-2.429.337-4.683.483-6.588.469-2.516.234-5.002.601-7.358 1.435C6.499 3.054-.074 4.474-2.692 7.829c-.204.234-.349.483-.509.732z"></path>
+          <path d="M12.237 24.598c-.189.63-.407 1.304-.48 2.007-.625 6.781-.509 12.23 1.12 16.932.625 1.787 1.44 3.545 2.763 5.288 1.134 1.494 2.487 2.944 4.043 4.35 4.915 4.423 9.249 3.823 15.226 4.423 7.344.747 12.303 3.296 18.803 5.419 5.831 1.904 11.983.806 17.393-3.662C77.329 54.2 82.186 45.28 83.771 37.854c1.6-7.617 2.109-15.658-1.745-23.025-5.904-11.293-23.355-8.774-33.229-7.66-5.555.63-12.826 3.047-18.774 4.233-2.283.454-4.203.791-5.41.894a14.19 14.19 0 0 0-5.148 2.973c-2.69 2.432-6.151 5.39-7.082 8.656-.058.234-.087.469-.146.674z"></path>
+          <path d="M31.449 24.407c-3.548 2.915-5.337 11.454-3.766 16.243 2.021 6.166 4.77 4.409 10.194 5.258 9.962 1.567 16.666 6.796 24.475-2.666 8.725-10.56 1.251-23.538-11.605-23.142-5.831.176-17.756 3.676-19.298 4.306z"></path>
+        </svg>
+        <svg class="d-block position-absolute bottom-0 end-0 text-warning opacity-10" style="transform: scaleX(-1);" width="140" height="86" viewBox="0 0 140 86" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.56155 84.728C3.89813 95.3168 8.77193 105.696 14.3618 114.354C31.1345 140.282 61.2598 159.203 93.1024 149.868C115.683 143.25 136.909 120.078 146.906 99.6379C157.262 78.4816 157.784 62.3169 149.314 40.7686C138.656 13.647 114.088 -10.3284 84.9291 4.90565C72.6616 11.3094 61.6112 19.2912 48.9043 25.2334C37.333 30.6501 22.7611 33.4689 12.9718 42.2129C0.148055 53.665 -1.80519 69.4006 1.56155 84.728Z"></path>
+        </svg>
+        <svg class="d-block position-absolute text-primary opacity-10" style="left: 140px; bottom: 0px;" width="100" height="109" viewBox="0 0 100 109" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.0417 15.1485C18.7381 10.3806 25.7233 6.78779 32.3773 4.42805C52.3217 -2.62478 76.5803 -0.291377 89.9528 18.0914C99.436 31.1261 101.262 52.5761 98.137 67.8474C94.9071 83.6571 88.4295 92.6458 74.8221 100.795C57.6962 111.053 34.339 113.786 24.8896 93.3249C20.9119 84.7197 18.2546 75.7674 13.8455 67.2289C9.83276 59.4504 3.10546 51.8265 1.45115 42.988C-0.716922 31.4112 4.80452 22.0566 13.0417 15.1485Z"></path>
+        </svg>
+      </div>
+      <div class="container pt-md-2 pt-lg-3 pt-xl-4" style="z-index: 2; position: sticky;">
+        <div class="row pb-5 pt-sm-2 mb-lg-2">
+          <div class="col-md-4 col-lg-3 pb-2 pb-md-0 mb-4 mb-md-0">
+            <a class="navbar-brand py-0 mb-3 mb-md-4" href="index.html">
+              <span class="text-white flex-shrink-0 me-2">
+                <img width="200" src="assets/app-icons/logo.png">
+              </span>
+            </a>
+            <p class="text-body fs-sm pb-2 pb-md-3 mb-3">إضافة جديدة ومتميزة للوسط الأكاديمي ومنبع للراغبين بدراسة فنون وعلوم الديانة الإسلامية تحت راية الوسطية الشرعية والاعتدال الواعي.</p>
+            <div class="d-flex gap-3">
+              <a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle" href="#" aria-label="Facebook">
+                <i class="ai-facebook"></i>
+              </a>
+              <a class="btn btn-icon btn-sm btn-secondary btn-dribbble rounded-circle" href="#" aria-label="Instagram">
+                <i class="ai-instagram"></i>
+              </a>
+              <a class="btn btn-icon btn-sm btn-secondary btn-x rounded-circle" href="#" aria-label="LinkedIn">
+                <i class="ai-x"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-7 col-xl-6 offset-lg-2 offset-xl-3">
+            <div class="row row-cols-1 row-cols-sm-3">
+              <div class="col mb-4 mb-md-0">
+                <h4 class="h6 fw-bold pb-lg-1">الروابط الهامة</h4>
+                <ul class="nav flex-column">
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">الرئيسية</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">الأقسام</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">المدونة</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">من نحن</a></li>
+                </ul>
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <h4 class="h6 fw-bold pb-lg-1">الدعم الفني</h4>
+                <ul class="nav flex-column">
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">مركز المساعدة</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">شروط الخدمة</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">القوانين والأحكام</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">سياسة الخصوصية</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h4 class="h6 fw-bold pb-2 mb-0 mb-lg-1">تثبيت التطبيق</h4>
+                <a class="btn btn-secondary px-3 py-2 mt-3 me-3 me-md-0" href="#">
+                  <img class="mx-1 d-dark-mode-none" src="assets/img/market/appstore-dark.svg" width="120" alt="App Store">
+                  <img class="mx-1 d-none d-dark-mode-block" src="assets/img/market/appstore-light.svg" width="120" alt="App Store">
+                </a>
+                <a class="btn btn-secondary px-3 py-2 mt-3 me-3 me-md-0" href="#">
+                  <img class="mx-1 d-dark-mode-none" src="assets/img/market/googleplay-dark.svg" width="119" alt="Google Play">
+                  <img class="mx-1 d-none d-dark-mode-block" src="assets/img/market/googleplay-light.svg" width="119" alt="Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav fs-sm mb-0">
+          <span class="text-body-secondary">جميع الحقوق محفوظة لدى <strong> جامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية</strong> &copy;</span>
+          <div><a class="text-decoration-none link-dark text-body-secondary fs-sm" href="https://wa.me/967770873226" target="_blank">تم التصميم بواسطة حسين بن يحيى</a></div>
+        </p>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <script src="assets/vendor/leaflet/dist/leaflet.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <script type="text/javascript">
+      /**
+       * Sticky Header on Scroll
+       */
+      const selectHeader = document.querySelector('#header');
+      if (selectHeader) {
+        let headerOffset = selectHeader.offsetTop;
+        let nextElement = selectHeader.nextElementSibling;
+
+        const headerFixed = () => {
+          if ((headerOffset - window.scrollY) <= 0) {
+            selectHeader.classList.add('sticked');
+            if (nextElement) nextElement.classList.add('sticked-header-offset');
+          } else {
+            selectHeader.classList.remove('sticked');
+            if (nextElement) nextElement.classList.remove('sticked-header-offset');
+          }
+        }
+        window.addEventListener('load', headerFixed);
+        document.addEventListener('scroll', headerFixed);
+      }
+    </script>
+  </body>
+</html>
