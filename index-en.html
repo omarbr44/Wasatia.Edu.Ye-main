@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-bs-theme="light">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8">
 
@@ -35,7 +35,27 @@
 
     <!-- css styles -->
     <link rel="stylesheet" href="assets/css/style-edit.css">
-
+    <style>
+      .navbar-expand-lg .dropdown .dropdown .dropdown-toggle::after {
+        margin-right:-0.325rem !important;
+        margin-left:auto !important;
+      }
+      ul.dropdown-menu {
+        text-align: start !important;
+      }
+      .accordion-button::after {
+        margin-right: 0 !important;
+        margin-left: auto !important;
+      }
+      .flag-menu {
+        right: 18px !important;
+        left: auto !important;
+      }
+      .swiper-vertical>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-vertical {
+        left: auto !important;
+        right: 1.25rem;
+      }
+    </style>
     <!-- Customizer generated styles -->
     <style id="customizer-styles"></style>
     
@@ -76,12 +96,12 @@
         <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="contact-info d-flex align-items-center">
             <div class="me-1 me-md-3">
-              <a class="nav-link dropdown-toggle link-light" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span>العربية</span><i class="ms-0 ms-lg-3 flag flag-ar"></i></a>
+              <a class="nav-link dropdown-toggle link-light" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span>English</span><i class="me-0 me-lg-3 flag flag-en"></i></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" data-language="ar">العربية<i class="flag flag-menu flag-ar"></i></a></li>
+                <li><a class="dropdown-item" href="#" data-language="en">English<i class="flag flag-menu flag-en"></i></a></li>
                 <li class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="index-en.html" data-language="en">الإنجليزية<i class="flag flag-menu flag-en"></i></a></li>
-                <li><a class="dropdown-item" href="#" data-language="in">الإندونيسية<i class="flag flag-menu flag-in"></i></a></li>
+                <li><a class="dropdown-item" href="index.html" data-language="ar">Arabic<i class="flag flag-menu flag-ar"></i></a></li>
+                <li><a class="dropdown-item" href="#" data-language="in">Indonesian<i class="flag flag-menu flag-in"></i></a></li>
               </ul>
             </div>
 <!--             <i class="ai-mail d-flex align-items-center">
@@ -97,7 +117,7 @@
             <a href="https://www.instagram.com/"><i class="ai-instagram"></i></a>
             <a href="https://www.snapchat.com/"><i class="ai-snapchat"></i></i></a>
             <a href="https://www.tiktok.com/"><i class="ai-tiktok"></i></i></a>
-            <a href="#" class="btn btn-light text-black text-opacity-75 px-3">حمل تطبيقنا</a>
+            <a href="#" class="btn btn-light text-black text-opacity-75 px-3">Download application</a>
           </div>
         </div>
       </section>
@@ -109,16 +129,16 @@
         <div class="container">
 
           <!-- Navbar brand (Logo) -->
-          <a class="navbar-brand pe-sm-3" style="padding-bottom: 0px;padding-top: 0px;" href="#">
-            <span class="text-primary flex-shrink-0 me-2">
+          <a class="navbar-brand ps-sm-3" style="padding-bottom: 0px;padding-top: 0px;" href="#">
+            <span class="text-primary flex-shrink-0 ms-2">
               <img class="logo d-block d-dark-mode-none" src="assets/app-icons/logo.png" alt="Logo">
               <img class="logo d-none d-dark-mode-block" src="assets/app-icons/logo-dark.png" alt="Logo">
             </span>
           </a>
 
           <!-- Theme switcher -->
-          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
-            <input class="form-check-input" type="checkbox" id="theme-mode">
+          <div class="form-check form-switch mode-switch order-lg-2 ms-3 ms-lg-4 me-auto" data-bs-toggle="mode">
+            <input class="form-check-input mx-1" type="checkbox" id="theme-mode">
             <label class="form-check-label" for="theme-mode">
               <i class="ai-sun fs-lg"></i>
             </label>
@@ -134,7 +154,7 @@
 
           <!-- Navbar collapse (Main navigation) -->
           <nav class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+            <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px; align-items: center;">
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">الكليات والمراكز</a>
                 <div class="dropdown-menu overflow-hidden p-0">
@@ -172,28 +192,28 @@
                 </div>
               </li> -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">عن الجامعة</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span style="text-wrap: auto;">About the university</span></a>
                 <ul class="dropdown-menu">
                   <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">رئاسة الجامعة</a>
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">University Presidency</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">مجلس الأمناء</a></li>
-                      <li><a class="dropdown-item" href="#">مؤسس الجامعة</a></li>
-                      <li><a class="dropdown-item" href="#">رئيس الجامعة</a></li>
-                      <li><a class="dropdown-item" href="#">نائب رئيس الجامعة</a></li>
-                      <li><a class="dropdown-item" href="#">حقائق وأرقام</a></li>
+                      <li><a class="dropdown-item" href="#">Board of Trustees</a></li>
+                      <li><a class="dropdown-item" href="#">Founder of the university</a></li>
+                      <li><a class="dropdown-item" href="#">University President</a></li>
+                      <li><a class="dropdown-item" href="#">Vice President of the University</a></li>
+                      <li><a class="dropdown-item" href="#">Facts and figures</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">الرؤية والأهداف</a>
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Vision and goals</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">رؤية الجامعة</a></li>
-                      <li><a class="dropdown-item" href="#">الرسالة والأهداف</a></li>
+                      <li><a class="dropdown-item" href="#">University vision</a></li>
+                      <li><a class="dropdown-item" href="#">Mission and objectives</a></li>
                     </ul>
                   </li>
-                  <li><a class="dropdown-item" href="#">نشأة الجامعة</a></li>
-                  <li><a class="dropdown-item" href="#">الهيكل التنظيمي</a></li>
-                  <li><a class="dropdown-item" href="#">المبنى الجامعي</a></li>
+                  <li><a class="dropdown-item" href="#">The establishment of the university</a></li>
+                  <li><a class="dropdown-item" href="#">Organizational structure</a></li>
+                  <li><a class="dropdown-item" href="#">University building</a></li>
                 </ul>
               </li>
               <!-- <li class="nav-item dropdown">
@@ -207,44 +227,44 @@
                 </ul>
               </li> -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">الكليات والمراكز</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Colleges and centers</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">كلية أصول الدين</a></li>
-                  <li><a class="dropdown-item" href="#">كلية العلوم الشرعية والقانونية</a></li>
-                  <li><a class="dropdown-item" href="#">كلية البنات</a></li>
-                  <li><a class="dropdown-item" href="#">كلية التعليم عن بعد</a></li>
-                  <li><a class="dropdown-item" href="#">مركز المرصد النبوي</a></li>
-                  <li><a class="dropdown-item" href="#">مركز الإبداع الثقافي</a></li>
+                  <li><a class="dropdown-item" href="#">Faculty of Fundamentals of Religion</a></li>
+                  <li><a class="dropdown-item" href="#">College of Sharia and Legal Sciences</a></li>
+                  <li><a class="dropdown-item" href="#">Girls' College</a></li>
+                  <li><a class="dropdown-item" href="#">College of Distance Education</a></li>
+                  <li><a class="dropdown-item" href="#">The Prophet's Observatory Center</a></li>
+                  <li><a class="dropdown-item" href="#">Cultural Creativity Center</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">البحث العلمي</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Scientific research</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">المؤتمرات العلمية</a></li>
-                  <li><a class="dropdown-item" href="#">الندوات العلمية</a></li>
-                  <li><a class="dropdown-item" href="#">مجلة أبحاث الوسطية الشرعية</a></li>
-                  <li><a class="dropdown-item" href="#">شروط وقواعد النشر</a></li>
-                  <li><a class="dropdown-item" href="#">هيئات ولجان المجلة</a></li>
+                  <li><a class="dropdown-item" href="#">Scientific conferences</a></li>
+                  <li><a class="dropdown-item" href="#">Scientific seminars</a></li>
+                  <li><a class="dropdown-item" href="#">Journal of Sharia Moderation Research</a></li>
+                  <li><a class="dropdown-item" href="#">Publishing terms and rules</a></li>
+                  <li><a class="dropdown-item" href="#">Magazine bodies and committees</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">القبول والتسجيل</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Admission and registration</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">متطلبات القبول بالجامعة</a></li>
-                  <li><a class="dropdown-item" href="#">دليل الطالب</a></li>
-                  <li><a class="dropdown-item" href="#">الرسوم الدراسية</a></li>
-                  <li><a class="dropdown-item" href="#">التقويم الجامعي</a></li>
-                  <li><a class="dropdown-item" href="#">نظام التعليم عن بعد</a></li>
+                  <li><a class="dropdown-item" href="#">University admission requirements</a></li>
+                  <li><a class="dropdown-item" href="#">Student guide</a></li>
+                  <li><a class="dropdown-item" href="#">Tuition fees</a></li>
+                  <li><a class="dropdown-item" href="#">University calendar</a></li>
+                  <li><a class="dropdown-item" href="#">Distance education system</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">إصدارات</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Versions</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">متطلبات القبول بالجامعة</a></li>
-                  <li><a class="dropdown-item" href="#">دليل الطالب</a></li>
-                  <li><a class="dropdown-item" href="#">الرسوم الدراسية</a></li>
-                  <li><a class="dropdown-item" href="#">التقويم الجامعي</a></li>
-                  <li><a class="dropdown-item" href="#">نظام التعليم عن بعد</a></li>
+                  <li><a class="dropdown-item" href="#">University admission requirements</a></li>
+                  <li><a class="dropdown-item" href="#">Student guide</a></li>
+                  <li><a class="dropdown-item" href="#">Tuition fees</a></li>
+                  <li><a class="dropdown-item" href="#">University calendar</a></li>
+                  <li><a class="dropdown-item" href="#">Distance education system</a></li>
                 </ul>
               </li>
               <!-- <li class="nav-item dropdown pe-0 pe-xl-3">
@@ -259,8 +279,8 @@
             </ul>
             <div class="d-sm-none p-3 mt-n3">
               <a class="btn btn-primary w-100 mb-1" href="#" target="_blank" rel="noopener">
-                <i class="ai-clipboard fs-xl me-2 ms-n1"></i>
-                التقدم الآن
+                <i class="ai-clipboard fs-xl ms-2 me-n1"></i>
+                Apply now
               </a>
             </div>
           </nav>
@@ -289,13 +309,13 @@
               <div class="container position-relative z-3 pt-5 py-lg-3 py-xl-5 my-5">
                 <div class="row pt-md-3 py-xxl-5 my-5">
                   <div class="col py-5 mb-md-4 mb-lg-5 header-swiper">
-                    <h1 class="display-4 text-uppercase mb-4">حفل تخرج الدفعتين الأولى والثانية لطلاب جامعة الوسطية الشرعية</h1>
+                    <h1 class="display-5 text-uppercase mb-4">Graduation ceremony for the first and second batches of Wasitiya Sharia University students</h1>
 <!--                     <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">حفل تخرج الدفعتين الأولى والثانية من طلاب جامعة الوسطية الشرعية مساء الثلاثاء 24 صفر 1444هـ ...</p>
  -->                    <div class="position-relative d-inline-flex align-items-center">
                       <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="blog.html" aria-label="Stretched Link">
                         <i class="ai-arrow-right"></i>
                       </a>
-                      <span class="text-body fs-lg fw-semibold ms-3">المزيد</span></div>
+                      <span class="text-body fs-lg fw-semibold me-3">More</span></div>
                   </div>
                 </div>
               </div>
@@ -305,13 +325,13 @@
               <div class="container position-relative z-3 pt-5 py-lg-3 py-xl-5 my-5">
                 <div class="row pt-md-3 py-xxl-5 my-5">
                   <div class="col py-5 mb-md-4 mb-lg-5 header-swiper">
-                    <h1 class="display-4 text-uppercase mb-4">إقامة ورشة العمل التدريبية لتوصيف <br>مقررات برامج البكالوريوس</h1>
+                    <h1 class="display-5 text-uppercase mb-4">Holding a training workshop to describe undergraduate program courses</h1>
 <!--                     <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">نظمت كلية التعليم عن بُعد بجامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية بشِعب الإمام المهاجر ...</p>
  -->                    <div class="position-relative d-inline-flex align-items-center">
                       <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="blog.html" aria-label="Stretched Link">
                         <i class="ai-arrow-right"></i>
                       </a>
-                      <span class="text-body fs-lg fw-semibold ms-3">المزيد</span></div>
+                      <span class="text-body fs-lg fw-semibold me-3">More</span></div>
                   </div>
                 </div>
               </div>
@@ -321,20 +341,20 @@
               <div class="container position-relative z-3 pt-5 py-lg-3 py-xl-5 my-5">
                 <div class="row pt-md-3 py-xxl-5 my-5">
                   <div class="col py-5 mb-md-4 mb-lg-5 header-swiper">
-                    <h1 class="display-5 text-uppercase mb-4">الندوة العلمية في ذكرى وفاة الحبيب أبوبكر المشهور</h1>
+                    <h1 class="display-5 text-uppercase mb-4">Scientific symposium on the anniversary of the death of the famous beloved Abu Bakr</h1>
 <!--                     <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">أقيمت مساء السبت 11 محرم 1445هـ بقاعة الإمام عبدالقادر السقاف افتتاحية الحلقة العلمية الأولى ...</p>
  -->                    <div class="position-relative d-inline-flex align-items-center">
                       <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="blog.html" aria-label="Stretched Link">
                         <i class="ai-arrow-right"></i>
                       </a>
-                      <span class="text-body fs-lg fw-semibold ms-3">المزيد</span>
+                      <span class="text-body fs-lg fw-semibold me-3">More</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-pagination swiper-pagination-vertical mb-4" style="align-items:end; right: -1rem;"></div>
+          <div class="swiper-pagination swiper-pagination-vertical mb-4" style="align-items:end"></div>
         </div>
 
       </section>
@@ -345,12 +365,12 @@
           <div class="position-relative overflow-hidden rounded-5 px-4 px-sm-5 px-lg-0">
             <div class="bg-primary bg-opacity-75 rounded-5 position-absolute top-0 start-0 w-100 h-100" style="background-color: #54a568 !important;" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="300"></div>
             <div class="row align-items-center position-relative z-2">
-              <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1 pb-sm-3 pt-5 py-md-0 py-lg-5" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250" >
-                <h2 class="display-3 text-white text-center text-md-start mb-4 mb-lg-5">حمل تطبيقنا <br class="d-none d-xxl-inline">على هاتفك <br class="d-none d-xxl-inline"> وتابع جديدنا</h2>
+              <div class="col-md-6 col-lg-5 col-xl-4 me-lg-5 pb-sm-3 pt-5 py-md-0 py-lg-5" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250" >
+                <h2 class="display-4 text-white text-center text-md-end mb-4 mb-lg-5">Download application <br class="d-none d-xxl-inline">On your phone <br class="d-none d-xxl-inline"> And follow our news</h2>
 
                 <!-- Market buttons -->
-                <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
-                  <a class="btn btn-light btn-lg px-3 py-2 me-sm-3 mb-3 mb-sm-0" href="#">
+                <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-end">
+                  <a class="btn btn-light btn-lg px-3 py-2 ms-sm-3 mb-3 mb-sm-0" href="#">
                     <img class="mx-1" src="assets/img/market/appstore-dark.svg" width="136" alt="App Store">
                   </a>
                   <a class="btn btn-light btn-lg px-3 py-2" href="#">
@@ -359,7 +379,7 @@
                 </div>
 
               </div>
-              <div class="col-md-6 col-lg-5 offset-xl-1">
+              <div class="col-md-6 col-lg-5 me-xl-5">
 
                 <!-- Image visible on screens < 768px -->
                 <img class="d-block d-md-none mx-auto" src="assets/img/landing/mobile-app-showcase/cta-screens-mobile.png" width="420" alt="App screen" data-aos="fade-up" data-aos-duration="600">
@@ -383,8 +403,8 @@
       <!-- Colleges -->
       <section class="pt-5 pb-3 mt-lg-3 mt-xl-4 mt-xxl-5">
         <div class="text-center pb-3 pt-2 pt-sm-3 pt-md-4 pt-xl-5 mx-auto mb-sm-2 mb-md-3 mb-lg-4" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-out-back">
-          <h2 class="h1">الكليات والمراكز</h2>
-          <p class="mb-0">تعرف على الكليات والمراكز بجامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية</p>
+          <h2 class="h1">Colleges and centers</h2>
+          <p class="mb-0">Learn about the colleges and centers at the Wasiyat Sharia University for Islamic and Human Sciences</p>
         </div>
       </section>
       <section class="bg-primary pb-3" style="background-color: #54a568 !important;">
@@ -400,8 +420,8 @@
               </div>
               <div class="card-body pb-3">
                 <img class="card-img mb-4 py-2" src="assets/img/colleges/college1.png" width="188" alt="college">
-                <h3 class="h4">كلية التعليم عن بعد</h3>
-                <p class="mb-0">تسعى لتسهيل عملية التعليم عن بعد من خلال بوابة إلكترونية، حيث تقوم بتأهيل خريج يخدم المجتمع على منهج الوسطية الشرعية.</p>
+                <h3 class="h4">College of Distance Education</h3>
+                <p class="mb-0">It seeks to facilitate the process of distance education through an electronic portal, whereby it prepares a graduate who will serve society according to the Islamic moderation approach.</p>
               </div>
               <div class="card-footer border-0 pt-3 mb-3">
                 <div class="btn btn-icon btn-lg btn-outline-primary rounded-circle pe-none">
@@ -421,8 +441,8 @@
               </div>
               <div class="card-body pb-3">
                 <img class="card-img mb-4 py-2" src="assets/img/colleges/college1.png" width="188" alt="college">
-                <h3 class="h4">كلية التعليم عن بعد</h3>
-                <p class="mb-0">تسعى لتسهيل عملية التعليم عن بعد من خلال بوابة إلكترونية، حيث تقوم بتأهيل خريج يخدم المجتمع على منهج الوسطية الشرعية.</p>
+                <h3 class="h4">College of Distance Education</h3>
+                <p class="mb-0">It seeks to facilitate the process of distance education through an electronic portal, whereby it prepares a graduate who will serve society according to the Islamic moderation approach.</p>
               </div>
               <div class="card-footer border-0 pt-3 mb-3">
                 <div class="btn btn-icon btn-lg btn-outline-primary rounded-circle pe-none">
@@ -442,8 +462,8 @@
               </div>
               <div class="card-body pb-3">
                 <img class="card-img mb-4 py-2" src="assets/img/colleges/college2.png" width="188" alt="college">
-                <h3 class="h4">كلية القرآن الكريم</h3>
-                <p class="mb-0">تسعى لتسهيل عملية التعليم عن بعد من خلال بوابة إلكترونية، حيث تقوم بتأهيل خريج يخدم المجتمع على منهج الوسطية الشرعية.</p>
+                <h3 class="h4">College of the Holy Quran</h3>
+                <p class="mb-0">It seeks to facilitate the process of distance education through an electronic portal, whereby it prepares a graduate who will serve society according to the Islamic moderation approach.</p>
               </div>
               <div class="card-footer border-0 pt-3 mb-3">
                 <div class="btn btn-icon btn-lg btn-outline-primary rounded-circle pe-none"><i class="ai-arrow-right"></i></div>
@@ -461,8 +481,8 @@
               </div>
               <div class="card-body pb-3">
                 <img class="card-img mb-4 py-2" src="assets/img/colleges/college3.png" width="188" alt="college">
-                <h3 class="h4">كلية البنات</h3>
-                <p class="mb-0">تسعى لتسهيل عملية التعليم عن بعد من خلال بوابة إلكترونية، حيث تقوم بتأهيل خريج يخدم المجتمع على منهج الوسطية الشرعية.</p>
+                <h3 class="h4">Girls' College</h3>
+                <p class="mb-0">It seeks to facilitate the process of distance education through an electronic portal, whereby it prepares a graduate who will serve society according to the Islamic moderation approach.</p>
               </div>
               <div class="card-footer border-0 pt-3 mb-3">
                 <div class="btn btn-icon btn-lg btn-outline-primary rounded-circle pe-none">
@@ -482,8 +502,8 @@
               </div>
               <div class="card-body pb-3">
                 <img class="card-img mb-4 py-2" src="assets/img/colleges/college4.png" width="188" alt="college">
-                <h3 class="h4">مركز اللغة العربية</h3>
-                <p class="mb-0">تسعى لتسهيل عملية التعليم عن بعد من خلال بوابة إلكترونية، حيث تقوم بتأهيل خريج يخدم المجتمع على منهج الوسطية الشرعية.</p>
+                <h3 class="h4">Arabic Language Center</h3>
+                <p class="mb-0">It seeks to facilitate the process of distance education through an electronic portal, whereby it prepares a graduate who will serve society according to the Islamic moderation approach.</p>
               </div>
               <div class="card-footer border-0 pt-3 mb-3">
                 <div class="btn btn-icon btn-lg btn-outline-primary rounded-circle pe-none">
@@ -503,8 +523,8 @@
               </div>
               <div class="card-body pb-3">
                 <img class="card-img mb-4 py-2" src="assets/img/colleges/college5.png" width="188" alt="college">
-                <h3 class="h4">مركز المرصد النبوي</h3>
-                <p class="mb-0">تسعى لتسهيل عملية التعليم عن بعد من خلال بوابة إلكترونية، حيث تقوم بتأهيل خريج يخدم المجتمع على منهج الوسطية الشرعية.</p>
+                <h3 class="h4">The Prophet's Observatory Center</h3>
+                <p class="mb-0">It seeks to facilitate the process of distance education through an electronic portal, whereby it prepares a graduate who will serve society according to the Islamic moderation approach.</p>
               </div>
               <div class="card-footer border-0 pt-3 mb-3">
                 <div class="btn btn-icon btn-lg btn-outline-primary rounded-circle pe-none">
@@ -518,18 +538,18 @@
       <!-- Resources (Carousel on screens < 992px) -->
       <section class="container py-5 mb-md-3 mb-lg-2 mb-xl-4 mb-xxl-5" data-aos="fade-down" data-aos-duration="600" data-aos-offset="300" data-aos-easing="ease-out-back">
         <div class="d-md-flex align-items-center pb-3 mb-md-3 mb-lg-4 mt-2 mt-sm-3 pt-2 pt-sm-4 pt-lg-5">
-          <h2 class="h1 text-center text-md-start mb-4 mb-md-0 me-md-4">المواضيع والأخبار الهامة</h2>
+          <h2 class="h1 text-center text-md-start mb-4 mb-md-0 ms-md-4">Important topics and news</h2>
 
           <!-- Categories -->
-          <ul class="nav nav-pills flex-nowrap fs-sm text-nowrap overflow-auto w-100 mx-auto me-md-0 mb-0 pb-3 pb-md-0" style="max-width: 408px;">
+          <ul class="nav nav-pills flex-nowrap fs-sm text-nowrap overflow-auto w-100 mx-auto ms-md-0 mb-0 pb-3 pb-md-0" style="max-width: 408px;">
             <li class="nav-item mb-0">
-              <a class="nav-link border" href="#">مناسبات</a>
+              <a class="nav-link border" href="#">Occasions</a>
             </li>
             <li class="nav-item mb-0">
-              <a class="nav-link border active" href="#">استضافات</a>
+              <a class="nav-link border active" href="#">Hosting</a>
             </li>
             <li class="nav-item mb-0">
-              <a class="nav-link border" href="#">أخرى</a>
+              <a class="nav-link border" href="#">Other</a>
             </li>
           </ul>
         </div>
@@ -556,22 +576,22 @@
                 <img class="rounded-5" src="assets/img/blog-resources/01.jpg" alt="Image">
               </a>
               <h3 class="h4 pt-4">
-                <a href="#">حفل تخرج الدفعتين الأولى والثانية لطلاب جامعة الوسطية الشرعية</a>
+                <a href="#">Graduation ceremony for the first and second batches of Wasitiya Sharia University students</a>
               </h3>
-              <p>حفل تخرج الدفعتين الأولى والثانية من طلاب جامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية مساء الثلاثاء 24 صفر 1444هـ بقاعة الإمام عبدالقادر ...</p>
+              <p>Graduation ceremony for the first and second batches of students at Al-Wasatiya Sharia University for Islamic and Human Sciences on Tuesday evening, Safar 24, 1444 AH, in the Imam Abdul Qadir Hall...</p>
               <div class="d-flex flex-wrap align-items-center pt-1 mt-n2">
-                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 me-3" href="#">
+                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 ms-3" href="#">
                   6
-                  <i class="ai-share fs-lg ms-1"></i>
+                  <i class="ai-share fs-lg me-1"></i>
                 </a>
                 <a class="nav-link text-body-secondary fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="#">
                   12
-                  <i class="ai-message fs-lg ms-1"></i>
+                  <i class="ai-message fs-lg me-1"></i>
                 </a>
                 <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
                 <span class="fs-sm text-body-secondary mt-2">12 hours ago</span>
                 <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
-                <a class="badge bg-primary bg-opacity-10 text-primary fs-xs mt-2" href="#">مناسبات</a>
+                <a class="badge bg-primary bg-opacity-10 text-primary fs-xs mt-2" href="#">Occasions</a>
               </div>
             </article>
 
@@ -581,22 +601,22 @@
                 <img class="rounded-5" src="assets/img/blog-resources/02.jpg" alt="Image">
               </a>
               <h3 class="h4 pt-4">
-                <a href="#">إقامة ورشة العمل التدريبية لتوصيف مقررات برامج البكالوريوس</a>
+                <a href="#">Holding a training workshop to describe undergraduate program courses</a>
               </h3>
-              <p>نظمت كلية التعليم عن بُعد بجامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية بشِعب الإمام المهاجر بسيئون مساء يوم الأربعاء ١٦ شعبان ١٤٤٤ه‍ ...</p>
+              <p>The College of Distance Education at the Moderate Sharia University for Islamic and Human Sciences at Imam Al-Muhajir Branch in Sayun organized on Wednesday evening, Shaban 16, 1444 AH...</p>
               <div class="d-flex flex-wrap align-items-center pt-1 mt-n2">
-                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 me-3" href="#">
+                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 ms-3" href="#">
                   10
-                  <i class="ai-share fs-lg ms-1"></i>
+                  <i class="ai-share fs-lg me-1"></i>
                 </a>
                 <a class="nav-link text-body-secondary fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="#">
                   19
-                  <i class="ai-message fs-lg ms-1"></i>
+                  <i class="ai-message fs-lg me-1"></i>
                 </a>
                 <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
                 <span class="fs-sm text-body-secondary mt-2">3 days ago</span>
                 <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
-                <a class="badge bg-primary bg-opacity-10 text-primary fs-xs mt-2" href="#">مناسبات</a>
+                <a class="badge bg-primary bg-opacity-10 text-primary fs-xs mt-2" href="#">Occasions</a>
               </div>
             </article>
 
@@ -606,22 +626,22 @@
                 <img class="rounded-5" src="assets/img/blog-resources/03.jpg" alt="Image">
               </a>
               <h3 class="h4 pt-4">
-                <a href="#">الندوة العلمية في ذكرى وفاة الحبيب أبوبكر المشهور</a>
+                <a href="#">Scientific symposium on the anniversary of the death of the famous beloved Abu Bakr</a>
               </h3>
-              <p>أقيمت مساء السبت 11 محرم 1445هـ بقاعة الإمام عبدالقادر السقاف افتتاحية الحلقة العلمية الأولى في ذكرى وفاة المفكر الإسلامي الحبيب أبي بكر العدني...</p>
+              <p>The opening of the first scientific seminar was held on Saturday evening, Muharram 11, 1445 AH, in the Imam Abdul Qadir Al-Saqqaf Hall, on the anniversary of the death of the beloved Islamic thinker Abu Bakr Al-Adani...</p>
               <div class="d-flex flex-wrap align-items-center pt-1 mt-n2">
-                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 me-3" href="#">
+                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 ms-3" href="#">
                   21
-                  <i class="ai-share fs-lg ms-1"></i>
+                  <i class="ai-share fs-lg me-1"></i>
                 </a>
                 <a class="nav-link text-body-secondary fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="#">
                   37
-                  <i class="ai-message fs-lg ms-1"></i>
+                  <i class="ai-message fs-lg me-1"></i>
                 </a>
                 <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
                 <span class="fs-sm text-body-secondary mt-2">5 days ago</span>
                 <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
-                <a class="badge bg-primary bg-opacity-10 text-primary fs-xs mt-2" href="#">استضافات</a>
+                <a class="badge bg-primary bg-opacity-10 text-primary fs-xs mt-2" href="#">Hosting</a>
               </div>
             </article>
           </div>
@@ -632,14 +652,14 @@
 
         <!-- Read more button -->
         <div class="text-center pt-4 my-2 mt-lg-0 pt-lg-5 pb-sm-2 pb-md-4">
-          <a class="btn btn-outline-primary rounded-pill" href="#">مشاهدة المزيد من المنشورات</a>
+          <a class="btn btn-outline-primary rounded-pill" href="#">View more posts</a>
         </div>
       </section>
       <!-- News section -->
       <section class="pt-5 pb-3 mt-lg-3 mt-xl-4 mt-xxl-5">
       <div class="container" data-aos="fade-up">
         <div class="text-center pb-3 pt-2 pt-sm-3 pt-md-4 pt-xl-5 mx-auto mb-sm-2 mb-md-3 mb-lg-4" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-out-back">
-          <h2 class="h1">الإعلانات</h2>
+          <h2 class="h1">Advertisements</h2>
         </div>
         <div class="row gy-4">
           <div class="swiper" data-swiper-options='
@@ -663,16 +683,16 @@
                   <img src="assets/img/landing/call-to-action.jpg" alt="" class="img-fluid" loading="lasy">
                 </div>
   
-                <p class="post-category">العقيدة والتصوف</p>
+                <p class="post-category">Doctrine and Sufism</p>
   
                 <h2 class="h4">
-                  <a href="blog-details.html">الله نور السماوات والأرض وعجائب انتشار نوره في الخليقة في هداياته ومنوحاته</a>
+                  <a href="blog-details.html">God is the light of the heavens and the earth and the wonders of His light spreading throughout creation through His gifts and blessings</a>
                 </h2>
   
                 <div class="d-flex align-items-center">
                   <img src="assets/img/blog/blog-author-1.jpg" alt="" class="img-fluid post-author-img flex-shrink-0" loading="lasy">
                   <div class="post-meta">
-                    <p class="post-author">الحبيب عمر بن حفيظ</p>
+                    <p class="post-author">Habib Omar bin Hafeez</p>
                     <p class="post-date">
                       <time datetime="2022-01-01">Jan 1, 2022</time>
                     </p>
@@ -688,16 +708,16 @@
                   <img src="assets/img/landing/call-to-action.jpg" alt="" class="img-fluid" loading="lasy">
                 </div>
   
-                <p class="post-category">العقيدة والتصوف</p>
+                <p class="post-category">Doctrine and Sufism</p>
   
                 <h2 class="h4">
-                  <a href="blog-details.html">الله نور السماوات والأرض وعجائب انتشار نوره في الخليقة في هداياته ومنوحاته</a>
+                  <a href="blog-details.html">God is the light of the heavens and the earth and the wonders of His light spreading throughout creation through His gifts and blessings</a>
                 </h2>
   
                 <div class="d-flex align-items-center">
                   <img src="assets/img/blog/blog-author-1.jpg" alt="" class="img-fluid post-author-img flex-shrink-0" loading="lasy">
                   <div class="post-meta">
-                    <p class="post-author">الحبيب عمر بن حفيظ</p>
+                    <p class="post-author">Habib Omar bin Hafeez</p>
                     <p class="post-date">
                       <time datetime="2022-01-01">Jan 1, 2022</time>
                     </p>
@@ -713,16 +733,16 @@
                   <img src="assets/img/landing/call-to-action.jpg" alt="" class="img-fluid" loading="lasy">
                 </div>
   
-                <p class="post-category">العقيدة والتصوف</p>
+                <p class="post-category">Doctrine and Sufism</p>
   
                 <h2 class="h4">
-                  <a href="blog-details.html">الله نور السماوات والأرض وعجائب انتشار نوره في الخليقة في هداياته ومنوحاته</a>
+                  <a href="blog-details.html">God is the light of the heavens and the earth and the wonders of His light spreading throughout creation through His gifts and blessings</a>
                 </h2>
   
                 <div class="d-flex align-items-center">
                   <img src="assets/img/blog/blog-author-1.jpg" alt="" class="img-fluid post-author-img flex-shrink-0" loading="lasy">
                   <div class="post-meta">
-                    <p class="post-author">الحبيب عمر بن حفيظ</p>
+                    <p class="post-author">Habib Omar bin Hafeez</p>
                     <p class="post-date">
                       <time datetime="2022-01-01">Jan 1, 2022</time>
                     </p>
@@ -738,16 +758,16 @@
                   <img src="assets/img/landing/call-to-action.jpg" alt="" class="img-fluid" loading="lasy">
                 </div>
   
-                <p class="post-category">العقيدة والتصوف</p>
+                <p class="post-category">Doctrine and Sufism</p>
   
                 <h2 class="h4">
-                  <a href="blog-details.html">الله نور السماوات والأرض وعجائب انتشار نوره في الخليقة في هداياته ومنوحاته</a>
+                  <a href="blog-details.html">God is the light of the heavens and the earth and the wonders of His light spreading throughout creation through His gifts and blessings</a>
                 </h2>
   
                 <div class="d-flex align-items-center">
                   <img src="assets/img/blog/blog-author-1.jpg" alt="" class="img-fluid post-author-img flex-shrink-0" loading="lasy">
                   <div class="post-meta">
-                    <p class="post-author">الحبيب عمر بن حفيظ</p>
+                    <p class="post-author">Habib Omar bin Hafeez</p>
                     <p class="post-date">
                       <time datetime="2022-01-01">Jan 1, 2022</time>
                     </p>
@@ -763,16 +783,16 @@
                   <img src="assets/img/landing/call-to-action.jpg" alt="" class="img-fluid" loading="lasy">
                 </div>
   
-                <p class="post-category">العقيدة والتصوف</p>
+                <p class="post-category">Doctrine and Sufism</p>
   
                 <h2 class="h4">
-                  <a href="blog-details.html">الله نور السماوات والأرض وعجائب انتشار نوره في الخليقة في هداياته ومنوحاته</a>
+                  <a href="blog-details.html">God is the light of the heavens and the earth and the wonders of His light spreading throughout creation through His gifts and blessings</a>
                 </h2>
   
                 <div class="d-flex align-items-center">
                   <img src="assets/img/blog/blog-author-1.jpg" alt="" class="img-fluid post-author-img flex-shrink-0" loading="lasy">
                   <div class="post-meta">
-                    <p class="post-author">الحبيب عمر بن حفيظ</p>
+                    <p class="post-author">Habib Omar bin Hafeez</p>
                     <p class="post-date">
                       <time datetime="2022-01-01">Jan 1, 2022</time>
                     </p>
@@ -790,7 +810,7 @@
     <!-- video reels section -->
     <section class="pt-5 pb-3 mt-lg-3 mt-xl-4 mt-xxl-5">
       <div class="text-center pb-3 pt-2 pt-sm-3 pt-md-4 pt-xl-5 mx-auto mb-sm-2 mb-md-3 mb-lg-4" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-out-back">
-        <h2 class="h1">من جامعتنا</h2>
+        <h2 class="h1">From our university</h2>
       </div>
     </section>
     <section class="bg-primary pb-3">
@@ -869,10 +889,10 @@
 
           <div class="row text-center text-md-start pb-3 pt-1 pt-sm-3 pt-md-4 pt-xl-5 mt-lg-2 mt-xl-0 mb-3 mb-lg-4" data-aos="fade-down" data-aos-duration="600" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-delay="50">
             <div class="col-md-6">
-              <h2 class="h1 mb-md-0 pb-2 text-gradient">منهج الوسطية والإعتدال الواعي</h2>
+              <h2 class="h1 mb-md-0 pb-2 text-gradient text-end">The approach of moderation and conscious moderation</h2>
             </div>
             <div class="col-md-6 pt-2">
-              <p class="mb-0">إضافة جديدة ومتميزة للوسط الأكاديمي ومنبع للراغبين بدراسة فنون وعلوم الديانة الإسلامية تحت راية الوسطية الشرعية والاعتدال الواعي.</p>
+              <p class="mb-0 text-end">A new and distinguished addition to the academic community and a source for those wishing to study the arts and sciences of the Islamic religion under the banner of legal moderation and conscious moderation.</p>
             </div>
           </div>
           <!-- Parallax image -->
@@ -900,8 +920,8 @@
       <!-- Gallery -->
       <section class="container pt-5 pb-1 my-lg-3 my-xl-4 my-xxl-5 portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-down" data-aos-duration="600" data-aos-offset="300" data-aos-easing="ease-out-back" data-aos-delay="150">
         <div class="text-center pb-3 pt-sm-3 pt-md-4 mx-auto mt-xxl-1 mb-3 mb-lg-4" style="max-width: 525px;">
-          <h2 class="h1">وسائط الجامعة</h2>
-          <p class="mb-0">يمكنك الإطلاع على ألبوم ومكتبة الصور الخاصة جامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية والكليات والمرافق التابعة لها</p>
+          <h2 class="h1">University media</h2>
+          <p class="mb-0">You can view the photo album and library of the Wasatiya Sharia University for Islamic and Human Sciences and its affiliated colleges and facilities</p>
         </div>
 
         <!-- Navs -->
@@ -910,7 +930,7 @@
             <a class="nav-link active filter-active curs" style="pointer-events: unset;cursor: pointer;" data-filter="*" role="tab">الكل</a>
           </li> -->
           <li class="nav-item d-flex justify-content-center align-items-center mb-0">
-            <a class="nav-link px-2 filter-active" style="cursor: pointer;" role="tab" data-filter=".year21">المبنى</a>
+            <a class="nav-link px-2 filter-active" style="cursor: pointer;" role="tab" data-filter=".year21">Building</a>
             <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 22H23" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M19.78 22.0101V17.55" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -922,7 +942,7 @@
             </svg>
           </li>
           <li class="nav-item d-flex justify-content-center align-items-center mb-0">
-            <a class="nav-link px-2" style="cursor: pointer;" role="tab" data-filter=".year22">المرافق</a>
+            <a class="nav-link px-2" style="cursor: pointer;" role="tab" data-filter=".year22">Facilities</a>
             <svg version="1.1" id="UNIVERSITY" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
               width="24px" height="24px" viewBox="0 0 1800 1800" enable-background="new 0 0 1800 1800" xml:space="preserve">
             <g>
@@ -948,7 +968,7 @@
             </svg>
           </li>
           <li class="nav-item d-flex justify-content-center align-items-center mb-0">
-            <a class="nav-link px-2" style="cursor: pointer;" role="tab" data-filter=".year23">الكليات</a>
+            <a class="nav-link px-2" style="cursor: pointer;" role="tab" data-filter=".year23">Colleges</a>
             <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 22H23" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M19.78 22.0101V17.55" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -960,7 +980,7 @@
             </svg>
           </li>
           <li class="nav-item d-flex justify-content-center align-items-center mb-0">
-            <a class="nav-link px-2" style="cursor: pointer;" role="tab" data-filter=".year24">المراكز</a>
+            <a class="nav-link px-2" style="cursor: pointer;" role="tab" data-filter=".year24">Centers</a>
             <svg version="1.1" id="UNIVERSITY" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
             width="24px" height="24px" viewBox="0 0 1800 1800" enable-background="new 0 0 1800 1800" xml:space="preserve">
           <g>
@@ -1062,10 +1082,10 @@
       <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
         <div class="row text-center text-md-start pb-3 pt-1 pt-sm-3 pt-md-4 pt-xl-5 mt-lg-2 mt-xl-0 mb-3 mb-lg-4" data-aos="fade-down" data-aos-duration="600" data-aos-offset="0" data-aos-easing="ease-out-back" data-aos-delay="150">
           <div class="col-md-6">
-            <h2 class="h1 mb-md-0 pb-2 text-gradient">تعرف على منهج الوسطية</h2>
+            <h2 class="h1 mb-md-0 pb-2 text-gradient text-end">Learn about the moderation approach</h2>
           </div>
           <div class="col-md-6 pt-2">
-            <p class="mb-0">إضافة جديدة ومتميزة للوسط الأكاديمي ومنبع للراغبين بدراسة فنون وعلوم الديانة الإسلامية تحت راية الوسطية الشرعية والاعتدال الواعي.</p>
+            <p class="mb-0 text-end">A new and distinguished addition to the academic community and a source for those wishing to study the arts and sciences of the Islamic religion under the banner of legal moderation and conscious moderation.</p>
           </div>
         </div>
         <div class="rounded-5 overflow-hidden">   
@@ -1084,11 +1104,11 @@
       <section class="bg-secondary pt-5 mt-5">
         <div class="container pt-md-2 pt-lg-3 pt-xl-5 mt-2 mt-sm-3 mt-md-4 mt-xxl-5 pb-5">
           <div class="row">
-            <div class="col-md-4 text-center text-md-start">
-              <h2 class="h1 mb-md-0 pb-2 text-gradient">الأسئلة الشائعة</h2>
-              <p class="pb-3 pb-sm-4">بإمكانك الإطلاع على الأسئلة الشائعة والمتكررة التي يتم السؤال عنها عادة حول هذه الجامعة</p>
+            <div class="col-md-4 text-center text-md-end">
+              <h2 class="h1 mb-md-0 pb-2 text-gradient">Frequently asked questions</h2>
+              <p class="pb-3 pb-sm-4">You can view the frequently asked questions that are commonly asked about this university</p>
               <div class="d-none d-md-flex justify-content-center">
-                <svg class="text-primary ms-n4" style="transform: scaleX(-1);" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="text-primary ms-n4" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
                 </svg>
               </div>
@@ -1097,43 +1117,46 @@
               <div class="accordion" id="faq">
                 <div class="accordion-item bg-light">
                   <h3 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" aria-expanded="true" aria-controls="questionOne">ما هي جامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية؟</button>
+                    <button class="accordion-button text-end" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" aria-expanded="true" aria-controls="questionOne">What is the Wasatiya Sharia University for Islamic and Human Sciences?</button>
                   </h3>
                   <div class="accordion-collapse collapse show" id="questionOne" aria-labelledby="headingOne" data-bs-parent="#faq">
-                    <div class="accordion-body fs-sm">إضافة جديدة ومتميزة للوسط الأكاديمي ومنبع جديد للراغبين في دراسة فنون وعلوم الديانة الإسلامية تحت راية الوسطية الشرعية والاعتدال الواعي.</div>
+                    <div class="accordion-body fs-sm">A new and distinguished addition to the academic community and a new source for those wishing to study the arts and sciences of the Islamic religion under the banner of legal moderation and conscious moderation.</div>
                   </div>
                 </div>
                 <div class="accordion-item bg-light">
                   <h3 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">متى أنشأت جامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية؟</button>
+                    <button class="accordion-button collapsed text-end" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">When was the Wasatiya Sharia University for Islamic and Human Sciences established?</button>
                   </h3>
                   <div class="accordion-collapse collapse" id="questionTwo" aria-labelledby="headingTwo" data-bs-parent="#faq">
-                    <div class="accordion-body fs-sm">بدأت الجامعة عملها ببرنامج (الفقه وأصوله) في العام الجامعي (2016 – 2017م) بعد صدور قرار وزارة التعليم العالي والبحث العلمي بالعمل ككلية بالترخيص رقم 1349 بتاريخ 4/11/ 2014م من وزارة التعليم العالي والبحث العلمي وذلك وفقا لقانون الجامعات والمعاهدات العليا رقم (13) لسنة 2005م ولائحته التنفيذية الصادرة بالقرار الجمهوري رقم (140) لسنة 2007م.
-                      وفي العام (2019 – 2020م) صدر القرار الوزاري رقم (4) لسنة 2020م والذي جاء بالموافقة على تحويل الكلية الى (جامعة الوسطية الشرعية للعلوم الإسلامية والانسانية) بتاريخ 17 ذي القعدة 1441هـ الموافق  8 يوليو 2020م  وبهذا انتقلت الكلية الى النظرة المستقبلية في تعدد الكليات التي ستنضم اليها في المستقبل القريب.</div>
+                    <div class="accordion-body fs-sm"
+                    >
+                    The university began its work with the program (Jurisprudence and its Principles) in the academic year (2016 - 2017 AD) after the issuance of the decision of the Ministry of Higher Education and Scientific Research to operate as a college with License No. 1349 dated 11/4/2014 AD from the Ministry of Higher Education and Scientific Research in accordance with the Law of Universities and Higher Institutes No. (13). ) of 2005 AD and its executive regulations issued by Republican Decree No. (140) of 2007 AD.
+                    In the year (2019 - 2020 AD), Ministerial Resolution No. (4) of 2020 AD was issued, approving the transformation of the college into (Al-Wasatiya Sharia University for Islamic and Human Sciences) on Dhul-Qi’dah 17, 1441 AH, corresponding to July 8, 2020 AD. Thus, the college moved to a future outlook in the multiplicity of colleges that You will join it in the near future.
+                  </div>
                   </div>
                 </div>
                 <div class="accordion-item bg-light">
                   <h3 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">ما هي الأهداف الإستراتيجية والمقاصد لهذه الجامعة؟</button>
+                    <button class="accordion-button collapsed text-end" type="button" data-bs-toggle="collapse" data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">What are the strategic goals and objectives of this university?</button>
                   </h3>
                   <div class="accordion-collapse collapse" id="questionThree" aria-labelledby="headingThree" data-bs-parent="#faq">
-                    <div class="accordion-body fs-sm">تسعى جامعة الوسطية الشرعية لتحقيق الأهداف الإستراتيجية التالية :<br> 1- تأهيل خريجين يمتلكون معرفة متعمقة، وثقافة انسانية منطلقة من المنهج الاسلامي الوسطي.<br> 2- اعداد الدراسات والبحوث العلمية التي تتسم بالأصالة والجدة بما يسهم في تحقيق التنمية المستدامة.<br> 3- خدمة المجتمع من خلال اقامة المراكز البحثية وتقديم الاستشارات العلمية.<br> 4- توثيق الروابط والشراكات مع الجامعات والمؤسسات محليا ودوليا بما يساعد على تطوير مخرجات الجامعة وتعزيز مكانتها.<br> 5- رفع مستوى الفهم والوعي بأخلاقيات الاسلام في مواجهة تحديات العصر وفقا لمنهج الوسطية الشرعية والاعتدال الواعي.<br> 6- المساهمة في تجديد الخطاب الاسلامي وقراءة المتغيرات المعاصرة من خلال دراسة علم فقه التحولات.<br></div>
+                    <div class="accordion-body fs-sm">Al-Wasatiya Sharia University seeks to achieve the following strategic goals:<br> 1- Preparing graduates who possess in-depth knowledge and a humanistic culture based on the moderate Islamic approach.<br> 2- Preparing scientific studies and research that are characterized by originality and novelty, which contributes to achieving sustainable development.<br> 3- Serving the community by establishing research centers and providing scientific consultations.<br> 4- Strengthening ties and partnerships with universities and institutions locally and internationally to help develop the university’s outputs and enhance its position.<br> 5- Raising the level of understanding and awareness of Islamic ethics in facing the challenges of the times in accordance with the approach of legal moderation and conscious moderation.<br> 6- Contributing to renewing Islamic discourse and reading contemporary changes through studying the science of jurisprudence of transformations.<br></div>
                   </div>
                 </div>
                 <div class="accordion-item bg-light">
                   <h3 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour" aria-expanded="false" aria-controls="questionFour">ما هي متطلبات القبول في الجامعة بالنسبة للطلاب اليمنين؟</button>
+                    <button class="accordion-button collapsed text-end" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour" aria-expanded="false" aria-controls="questionFour">What are the university admission requirements for Yemeni students?</button>
                   </h3>
                   <div class="accordion-collapse collapse" id="questionFour" aria-labelledby="headingFour" data-bs-parent="#faq">
-                    <div class="accordion-body fs-sm">1- أن لايقل معدل نسبة النجاح في الثانوية العامة عن 65 %.<br> 2- نسختان طبق الأصل من شهادة الثانوية العامة.<br> 3- نسخة من صورة  البطاقة الشخصية أو جواز السفر ساري المفعول.<br> 4- ثمان صور شخصية.<br> 5- ملف علاقي.<br></div>
+                    <div class="accordion-body fs-sm">1- The success rate in high school must not be less than 65%.<br> 2- Two true copies of the high school certificate.<br> 3- A copy of a copy of a valid ID card or passport.<br> 4- Eight personal photos.<br> 5- My relationship file.<br></div>
                   </div>
                 </div>
                 <div class="accordion-item bg-light">
                   <h3 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFive" aria-expanded="false" aria-controls="questionFive">ما هي متطلبات القبول في الجامعة بالنسبة للطلاب الأجانب؟</button>
+                    <button class="accordion-button collapsed text-end" type="button" data-bs-toggle="collapse" data-bs-target="#questionFive" aria-expanded="false" aria-controls="questionFive">What are the university admission requirements for foreign students?</button>
                   </h3>
                   <div class="accordion-collapse collapse" id="questionFive" aria-labelledby="headingFive" data-bs-parent="#faq">
-                    <div class="accordion-body fs-sm">1- أن يكون المتقدم حاصلا على شهادة الثانوية العامة أو مايعادلها، ومترجمة من جهة قانونية معتمدة في بلد الاصدار ومعمدة من الاتي:<br> <ul><li>وزارة التربية والتعليم في الدولة الصادرة منها الشهادة.</li><li>وزارة الخارجية في الدولة الصادرة منها الشهادة.</li><li>سفارة الجمهورية اليمنية.</li><li>وزارة الخارجية اليمنية ومكاتبها المعتمدة في المحافظات.</li></ul>2- صورة من جواز السفر.<br> 3- ثمان صور شخصية 6 x 4 خلفيتها بيضاء.<br></div>
+                    <div class="accordion-body fs-sm">1- The applicant must have a high school diploma or its equivalent, translated by an accredited legal authority in the country of issue and certified by the following:<br> <ul><li>The Ministry of Education in the country from which the certificate was issued.</li><li>The Ministry of Foreign Affairs in the country from which the certificate was issued.</li><li>Embassy of the Republic of Yemen.</li><li>The Yemeni Ministry of Foreign Affairs and its accredited offices in the governorates.</li></ul>2- A copy of the passport.<br> 3- Eight personal photos, 6 x 4, with a white background.<br></div>
                   </div>
                 </div>
               </div>
@@ -1153,10 +1176,10 @@
       <section class="container py-1 mb-md-2 mb-lg-1 mb-xl-3 mb-xxl-4" data-aos="fade-down" data-aos-duration="600" data-aos-offset="0" data-aos-easing="ease-out-back" data-aos-delay="150">
         <div class="row text-center text-md-start pb-3 pt-1 pt-sm-3 pt-md-4 pt-xl-5 mt-lg-2 mt-xl-0 mb-3 mb-lg-4">
           <div class="col-md-6">
-            <h2 class="h1 mb-md-0 pb-2 text-gradient">موقعنا على الخريطة</h2>
+            <h2 class="h1 mb-md-0 pb-2 text-gradient text-end">Our location on the map</h2>
           </div>
           <div class="col-md-6 pt-2">
-            <p class="mb-0">تعرف على موقع المبنى الرئيسي لجامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية عبر تقنية خرائط Google Map.</p>
+            <p class="mb-0 text-end">Find out the location of the main building of the Wasiyat Sharia University for Islamic and Humanities via Google Map technology.</p>
           </div>
         </div>
         <div class="rounded-5 overflow-hidden">   
@@ -1166,7 +1189,7 @@
 
       <!-- Book slider -->
       <section class="py-5 mb-5" data-bs-theme="dark">
-        <h2 style="margin-right: 5.5rem; font-size: 1.5rem; margin-bottom: 3rem;" class="h2 pb-2 text-gradient">من إصدارات ومطبوعات الجامعة</h2>
+        <h2 style="font-size: 1.5rem; margin-bottom: 3rem;" class="h2 pb-2 text-gradient text-center">From university publications and publications</h2>
         <div class="swiper" data-swiper-options='{
           "spaceBetween": 24,
           "navigation": {
@@ -1184,27 +1207,27 @@
         }'>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img style="width: 60%; margin-right: 20%;" src="./assets/img/landing/book1.jpg" alt="book1" >
+              <img style="width: 60%; margin-left: 20%;" src="./assets/img/landing/book1.jpg" alt="book1" >
             </div>
             <div class="swiper-slide">
-              <img style="width: 60%; margin-right: 20%;" src="./assets/img/landing/book2.jpg" alt="book1" >
+              <img style="width: 60%; margin-left: 20%;" src="./assets/img/landing/book2.jpg" alt="book1" >
             </div>
             <div class="swiper-slide">
-              <img style="width: 60%; margin-right: 20%;" src="./assets/img/landing/book3.jpg" alt="book1" >
+              <img style="width: 60%; margin-left: 20%;" src="./assets/img/landing/book3.jpg" alt="book1" >
             </div>
             <div class="swiper-slide">
-              <img style="width: 60%; margin-right: 20%;" src="./assets/img/landing/book4.jpg" alt="book1" >
+              <img style="width: 60%; margin-left: 20%;" src="./assets/img/landing/book4.jpg" alt="book1" >
             </div>
             <div class="swiper-slide">
-              <img style="width: 60%; margin-right: 20%;" src="./assets/img/landing/book1.jpg" alt="book1" >
+              <img style="width: 60%; margin-left: 20%;" src="./assets/img/landing/book1.jpg" alt="book1" >
             </div>
           </div>
           <div class="d-flex justify-content-center mt-4 ms-auto ms-xl-0 pe-sm-3 pe-xl-0">
-            <button class="btn btn-sm btn-icon btn-outline-primary rounded-circle me-3" type="button" id="prev-book" aria-label="Prev">
-              <i class="ai-arrow-right"></i>
-            </button>
-            <button class="btn btn-sm btn-icon btn-outline-primary rounded-circle" type="button" id="next-book" aria-label="Next">
+            <button class="btn btn-sm btn-icon btn-outline-primary rounded-circle" type="button" id="prev-book" aria-label="Prev">
               <i class="ai-arrow-left"></i>
+            </button>
+            <button class="btn btn-sm btn-icon btn-outline-primary rounded-circle me-3" type="button" id="next-book" aria-label="Next">
+              <i class="ai-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -1217,8 +1240,8 @@
     <!-- Footer -->
     <footer class="footer bg-secondary py-2 position-relative overflow-hidden">
       <div class="container">
-        <div class="position-absolute top-0 end-0 pe-5 z-2">
-          <svg class="me-5" width="514" height="254" viewBox="0 0 514 254" fill="#814d1d" fill-opacity=".04" xmlns="http://www.w3.org/2000/svg">
+        <div class="position-absolute top-0 end-0 ps-5 z-2">
+          <svg class="ms-5" width="514" height="254" viewBox="0 0 514 254" fill="#814d1d" fill-opacity=".04" xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="257" cy="0.5" rx="257" ry="253.5"></ellipse>
           </svg>
         </div>
@@ -1239,12 +1262,12 @@
       <div class="container pt-md-2 pt-lg-3 pt-xl-4" style="z-index: 2; position: sticky;">
         <div class="row pb-5 pt-sm-2 mb-lg-2">
           <div class="col-md-4 col-lg-3 pb-2 pb-md-0 mb-4 mb-md-0">
-            <a class="navbar-brand py-0 mb-3 mb-md-4" href="index.html">
-              <span class="text-white flex-shrink-0 me-2">
+            <a class="navbar-brand py-0 mb-3 mb-md-4 m-0 me-auto" href="index.html">
+              <span class="text-white flex-shrink-0 ms-2">
                 <img width="200" src="assets/app-icons/logo.png">
               </span>
             </a>
-            <p class="text-body fs-sm pb-2 pb-md-3 mb-3">إضافة جديدة ومتميزة للوسط الأكاديمي ومنبع للراغبين بدراسة فنون وعلوم الديانة الإسلامية تحت راية الوسطية الشرعية والاعتدال الواعي.</p>
+            <p class="text-body fs-sm pb-2 pb-md-3 mb-3">A new and distinguished addition to the academic community and a source for those wishing to study the arts and sciences of the Islamic religion under the banner of legal moderation and conscious moderation.</p>
             <div class="d-flex gap-3">
               <a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle" href="#" aria-label="Facebook">
                 <i class="ai-facebook"></i>
@@ -1257,28 +1280,28 @@
               </a>
             </div>
           </div>
-          <div class="col-md-8 col-lg-7 col-xl-6 offset-lg-2 offset-xl-3">
+          <div class="col-md-8 col-lg-7 col-xl-6 me-auto">
             <div class="row row-cols-1 row-cols-sm-3">
               <div class="col mb-4 mb-md-0">
-                <h4 class="h6 fw-bold pb-lg-1">الروابط الهامة</h4>
-                <ul class="nav flex-column">
-                  <li><a class="nav-link fw-normal py-1 px-0" href="#">الرئيسية</a></li>
-                  <li><a class="nav-link fw-normal py-1 px-0" href="#">الأقسام</a></li>
-                  <li><a class="nav-link fw-normal py-1 px-0" href="#">المدونة</a></li>
-                  <li><a class="nav-link fw-normal py-1 px-0" href="#">من نحن</a></li>
+                <h4 class="h6 fw-bold pb-lg-1">Important links</h4>
+                <ul class="nav flex-column p-0">
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">Home</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">Departments</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">Blog</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">Who are we?</a></li>
                 </ul>
               </div>
               <div class="col mb-4 mb-md-0">
-                <h4 class="h6 fw-bold pb-lg-1">الدعم الفني</h4>
-                <ul class="nav flex-column">
-                  <li><a class="nav-link fw-normal py-1 px-0" href="#">مركز المساعدة</a></li>
-                  <li><a class="nav-link fw-normal py-1 px-0" href="#">شروط الخدمة</a></li>
-                  <li><a class="nav-link fw-normal py-1 px-0" href="#">القوانين والأحكام</a></li>
-                  <li><a class="nav-link fw-normal py-1 px-0" href="#">سياسة الخصوصية</a></li>
+                <h4 class="h6 fw-bold pb-lg-1">technical support</h4>
+                <ul class="nav flex-column p-0">
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">Help Center</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">Terms of Service</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">Laws and regulations</a></li>
+                  <li><a class="nav-link fw-normal py-1 px-0" href="#">privacy policy</a></li>
                 </ul>
               </div>
               <div class="col">
-                <h4 class="h6 fw-bold pb-2 mb-0 mb-lg-1">تثبيت التطبيق</h4>
+                <h4 class="h6 fw-bold pb-2 mb-0 mb-lg-1">Install the application</h4>
                 <a class="btn btn-secondary px-3 py-2 mt-3 me-3 me-md-0" href="#">
                   <img class="mx-1 d-dark-mode-none" src="assets/img/market/appstore-dark.svg" width="120" alt="App Store">
                   <img class="mx-1 d-none d-dark-mode-block" src="assets/img/market/appstore-light.svg" width="120" alt="App Store">
@@ -1292,8 +1315,8 @@
           </div>
         </div>
         <p class="nav fs-sm mb-0">
-          <span class="text-body-secondary">جميع الحقوق محفوظة لدى <strong> جامعة الوسطية الشرعية للعلوم الإسلامية والإنسانية</strong> &copy;</span>
-          <div><a class="text-decoration-none link-dark text-body-secondary fs-sm" href="https://wa.me/967770873226" target="_blank">تم التصميم بواسطة حسين بن يحيى</a></div>
+          <span class="text-body-secondary">All rights reserved to<strong> Wasatiyah Sharia University for Islamic and Human Sciences</strong> &copy;</span>
+          <div><a class="text-decoration-none link-dark text-body-secondary fs-sm" href="https://wa.me/967770873226" target="_blank">Designed by Hussein bin Yahya</a></div>
         </p>
       </div>
     </footer>
