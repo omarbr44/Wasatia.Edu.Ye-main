@@ -56,6 +56,16 @@
       .footer-nav .nav-link {
         color: #fff !important;
       }
+      .dropend-directon {
+        right: auto !important;
+        left: 100% !important;
+        margin-left: 0.375rem !important;
+        margin-right: 0 !important;
+      }
+      .dropend-toggle::after
+        {-webkit-mask:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cpath d='M12.7,9.7c0.4-0.4,1.1-0.4,1.5,0l6.7,6.7c0.4,0.4,0.4,1.1,0,1.5l-6.7,6.7c-0.4,0.4-1.1,0.4-1.5,0s-0.4-1.1,0-1.5l6-6l-6-6C12.3,10.6,12.3,10.1,12.7,9.7L12.7,9.7z'/%3e%3c/svg%3e") no-repeat 50% 50% !important;mask:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cpath d='M12.7,9.7c0.4-0.4,1.1-0.4,1.5,0l6.7,6.7c0.4,0.4,0.4,1.1,0,1.5l-6.7,6.7c-0.4,0.4-1.1,0.4-1.5,0s-0.4-1.1,0-1.5l6-6l-6-6C12.3,10.6,12.3,10.1,12.7,9.7L12.7,9.7z'/%3e%3c/svg%3e") no-repeat 50% 50% !important
+        ;transform: none !important; margin-left: auto !important; margin-right: 0 !important;
+      }
     </style>
     <!-- Customizer generated styles -->
     <style id="customizer-styles"></style>
@@ -194,10 +204,10 @@
               </li> -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span style="text-wrap: auto;">About the university</span></a>
-                <ul class="dropdown-menu" style="direction: rtl;">
+                <ul class="dropdown-menu">
                   <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">University Presidency</a>
-                    <ul class="dropdown-menu">
+                    <a class="dropdown-item dropdown-toggle dropend-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">University Presidency</a>
+                    <ul class="dropdown-menu dropend-directon">
                       <li><a class="dropdown-item" href="#">Board of Trustees</a></li>
                       <li><a class="dropdown-item" href="#">Founder of the university</a></li>
                       <li><a class="dropdown-item" href="#">University President</a></li>
@@ -206,8 +216,8 @@
                     </ul>
                   </li>
                   <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Vision and goals</a>
-                    <ul class="dropdown-menu">
+                    <a class="dropdown-item dropdown-toggle dropend-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Vision and goals</a>
+                    <ul class="dropdown-menu dropend-directon">
                       <li><a class="dropdown-item" href="#">University vision</a></li>
                       <li><a class="dropdown-item" href="#">Mission and objectives</a></li>
                     </ul>
